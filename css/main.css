@@ -148,7 +148,7 @@ p {
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
     flex-wrap: wrap;
     margin: auto;
     overflow-y: auto;
