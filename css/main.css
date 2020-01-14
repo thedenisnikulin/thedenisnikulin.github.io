@@ -179,14 +179,20 @@ p {
     align-items: center;
 }
 
+.book-item:hover {
+    transform: scale(1.05);
+}
+
 #book1 {
     background: linear-gradient(to right, rgba(0,0,0,.6), rgba(0,0,0,.6)), url("../img/previews/book1.jpg");
     background-size: cover;
     transition: transform 0.2s;
 }
 
-.book-item:hover {
-    transform: scale(1.05);
+#book2 {
+    background: linear-gradient(to right, rgba(0,0,0,.6), rgba(0,0,0,.6)), url("../img/previews/book2.jpg");
+    background-size: cover;
+    transition: transform 0.2s;
 }
 
 #book-title {
