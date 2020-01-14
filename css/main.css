@@ -170,15 +170,19 @@ p {
     min-width: calc(15em / 5 * 4);
     max-width: calc(15em / 5 * 4);
     height: calc(15em / 5 * 4);
-    background: linear-gradient(to right, rgba(0,0,0,.6), rgba(0,0,0,.6));
-    background-size: cover;
-    transition: transform 0.2s;
+    background: rgba(79, 79, 79, 0.3);
     margin: 10px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+
+#book1 {
+    background: linear-gradient(to right, rgba(0,0,0,.6), rgba(0,0,0,.6)), url("../img/previews/book1.jpg");
+    background-size: cover;
+    transition: transform 0.2s;
 }
 
 .book-item:hover {
@@ -221,7 +225,6 @@ p {
     color: #4f4f4f;
     margin-right: 15px;
 }
-
 /*==============CONTACTS==============*/
 
 #contacts-section {
