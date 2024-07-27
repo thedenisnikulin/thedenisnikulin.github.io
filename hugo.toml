@@ -1,0 +1,14 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = '(▰˘◡˘▰)'
+theme = 'hugo-bearcub'
+copyright = "🔥"
+enableRobotsTXT = true
+
+[markup.goldmark.renderer]
+unsafe = true # Allow HTML in md files
+
+[params]
+themeStyle = "herman"
+dateFormat = "2006-01-02"
+madeWith = "2024"
