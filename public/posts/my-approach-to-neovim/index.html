@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>My Approach to Neovim | (▰˘◡˘▰)</title>
+<meta name="title" content="My Approach to Neovim" />
+<meta name="description" content="The story I always found myself looking towards those terminal based modal editors like Neovim, but every time one thing really held me behind: the amount of time I needed to put into configuration. You have to spend quite a lot of time to configure a stable feature-complete version of Neovim, and it actually doesn&rsquo;t quite pay off in the beginning, because it&rsquo;s so tempting to stay with your comfy VS Code and don&rsquo;t waste time." />
+<meta name="author" content="" />
+<meta name="keywords" content="" />
+
+
+
+
+
+
+  
+  <meta property="og:url" content="http://localhost:1313/posts/my-approach-to-neovim/">
+  <meta property="og:site_name" content="(▰˘◡˘▰)">
+  <meta property="og:title" content="My Approach to Neovim">
+  <meta property="og:description" content="The story I always found myself looking towards those terminal based modal editors like Neovim, but every time one thing really held me behind: the amount of time I needed to put into configuration. You have to spend quite a lot of time to configure a stable feature-complete version of Neovim, and it actually doesn’t quite pay off in the beginning, because it’s so tempting to stay with your comfy VS Code and don’t waste time.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-07-06T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-07-06T00:00:00+00:00">
+
+
+  
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="My Approach to Neovim">
+  <meta name="twitter:description" content="The story I always found myself looking towards those terminal based modal editors like Neovim, but every time one thing really held me behind: the amount of time I needed to put into configuration. You have to spend quite a lot of time to configure a stable feature-complete version of Neovim, and it actually doesn’t quite pay off in the beginning, because it’s so tempting to stay with your comfy VS Code and don’t waste time.">
+
+
+  
+  
+  <meta itemprop="name" content="My Approach to Neovim">
+  <meta itemprop="description" content="The story I always found myself looking towards those terminal based modal editors like Neovim, but every time one thing really held me behind: the amount of time I needed to put into configuration. You have to spend quite a lot of time to configure a stable feature-complete version of Neovim, and it actually doesn’t quite pay off in the beginning, because it’s so tempting to stay with your comfy VS Code and don’t waste time.">
+  <meta itemprop="datePublished" content="2023-07-06T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2023-07-06T00:00:00+00:00">
+  <meta itemprop="wordCount" content="1156">
+
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  
+  <link href="/herman.min.css" rel="stylesheet">
+
+  
+
+  
+
+  
+</head>
+
+<body>
+  <header><a class="skip-link" href="#main-content">Skip to main content</a>
+
+<a href="/" class="title"><h1>(▰˘◡˘▰)</h1></a>
+<nav>
+<a href='http://localhost:1313/index.xml'>RSS</a>
+
+
+
+
+
+
+
+</nav>
+</header>
+  <main id="main-content">
+
+<h1>My Approach to Neovim</h1>
+<p class="byline">
+  <time datetime='2023-07-06' pubdate>
+    2023-07-06
+  </time>
+  
+</p>
+
+<content>
+  <h1 id="the-story">The story</h1>
+<p>I always found myself looking towards those terminal based modal editors like Neovim, but every time one thing really held me behind: the amount of time I needed to put into configuration. You have to spend quite a lot of time to configure a stable feature-complete version of Neovim, and it actually doesn&rsquo;t quite pay off in the beginning, because it&rsquo;s so tempting to stay with your comfy VS Code and don&rsquo;t waste time. I tried to configure Neovim like 3 times in my entire career, every time with a goal to build a complete editor, but having successfully accomplished it only with my latest attempt.</p>
+<p>When I was most disappointed configuring Neovim, I have found Helix, a Neovim alternative with lots of features built in. It really made me interested when I first heard about it. Because configuration is minimal, I could focus more on the editing itself without thinking much about what plugin I need to install next, and so Helix became the editor which introduced modal editing to me. When using Neovim in the beginning, I was more focused on just making it look good (&ldquo;tUrn yOuR vIm iNto a fUlL fEaTuRed IdE&rdquo; kind of videos, you know), but I didn&rsquo;t study much the &ldquo;vim way&rdquo; of editing. I was using only some keys like <code>hjkl</code>, maybe some <code>w</code> and <code>b</code>, sometimes mouse, which by themselves are very far from making the editing experience productive. Though I eventually left Helix, it contributed much to how I approached modal editing.</p>
+<p>After becoming comfortable with Helix, some crazy idea popped up in my head: &ldquo;now if I am good at Helix, and Helix is like Neovim, what if I try to configure Neovim similarly to Helix? Then, with powerful plugin system, I could gradually improve my experience, the thing I cannot do with Helix which lacks plugins&rdquo;. After thinking a little, I&rsquo;ve cleaned my old <code>~/.config/nvim</code> directory, and got my hands dirty. And to my very surprise, the idea worked like a charm: I actually went to a minimally viable working Neovim config with essential plugins and features in a single <code>init.lua</code> file really, really fast! It took me nearly a couple of days to configure without much pain, unlike my any previous attempt. Great!</p>
+<p>I think why it really worked for me this time is because my requirements for an editor were much more &ldquo;real&rdquo; when I switched from Helix to Neovim. When you switch from something like VSCode, you want those features that GUI editors have, which are mostly very different from what you get in modal editors. You switch the editing paradigm which you haven&rsquo;t yet understood and accepted, and that&rsquo;s why you expect something from Neovim which it cannot provide (for good though). That&rsquo;s why some people misinterpret Neovim as being an IDE, because they want to see it as an IDE, which eventually lead to frustration.</p>
+<p>What I learned from this is that Neovim is a different code editor. And if you want to learn it well, you should approach it differently, as a new thing, without bringing your old habits from traditional editors.</p>
+<h1 id="the-approach">The approach</h1>
+<p>Below are the points that changed Neovim for me. Having all these makes me really happy with my current configuration.</p>
+<h2 id="1-keymaps">1. Keymaps</h2>
+<p>I really like the way keymaps are organized in Helix. So my keymaps are organized in a similar way.
+Basically, I have 2 types (in Helix they are called &ldquo;modes&rdquo;) of keymaps - <code>goto</code> and <code>space</code> keymaps. Goto are those keymaps which make you jump somewhere, like &ldquo;Go to definition&rdquo;, &ldquo;Go to next buffer&rdquo;, etc. Space are general purpose (space because it&rsquo;s the leader key).</p>
+<p>My space keymaps (not exhaustive):
+<img src="/8eqmtlv5iecb07emovmv.png" alt="My space keymaps (not exhaustive)"></p>
+<p>My goto keymaps:
+<img src="/vx1pgnrs8xvc10f13rlz.png" alt="My goto keymaps"></p>
+<h2 id="2-much-of-telescope">2. Much of Telescope</h2>
+<p>You can use Telescope for so much of things! File browser, notification history, keymaps browser, filetypes picker, diagnostics, git, DAP command picker, and so on. It&rsquo;s a such fundamental tool that I can&rsquo;t imagine using Neoivm without it.</p>
+<p>It just fits so good with Neovim. I don&rsquo;t really like split windows because they are somewhat clumsy in terminal editors, that&rsquo;s why I don&rsquo;t have <code>nerdtree</code> and don&rsquo;t use <code>nvim-dap-ui</code>: I find such &ldquo;util splits&rdquo; not so pleasant to work with. Telescope file browser and <code>dap.ui.widgets</code> are just much better (though the latter is not Telescope, but neither is a split window). And a lot of things can be implemented with Telescope. It contributes a very huge part to overall editing experience.</p>
+<p>Telescope File browser
+<img src="/xg5jl0r3cxwoeoe73y2f.png" alt="Image description"></p>
+<p>Git commits with Telescope
+<img src="/10p1n4ktcj36uqbtgs2h.png" alt="Image description"></p>
+<p>DAP commands with Telescope
+<img src="/ufkh7oehwfkuhvxgh8hx.png" alt="Image description"></p>
+<h2 id="3-enhanced-movement">3. Enhanced movement</h2>
+<p>There&rsquo;s not much to say: using <code>leap.nvim</code> adds up to editing speed on mid-range movements, can&rsquo;t really edit in nvim without it.</p>
+<h2 id="4-nice-ui">4. Nice UI</h2>
+<p>Not related to &ldquo;the approach&rdquo;, but made me enjoy the editor much more</p>
+<p>Normal mode commands, search, code actions at screen center with nice round corners
+<img src="/z1mhxvrq68cp9oww7zb8.png" alt="Image description"></p>
+<p><img src="/0c5k543n38sxnav0axhf.png" alt="Image description"></p>
+<p><img src="/6qnleduueeo9jcr1ay65.png" alt="Image description"></p>
+<p>Pretty notifications</p>
+<p><img src="/ar49akbux5mg31a0nbeo.png" alt="Image description"></p>
+<h2 id="5-use-other-tools">5. Use other tools</h2>
+<p>I think Neovim is a very powerful editor, but it&rsquo;s still and editor, and sometimes you need more than this. You have so much CLI tools, and the power of pipes, use it to complement your Neovim experience. The following are just some from the top of my head:</p>
+<ul>
+<li><code>jq</code> for json manipulations (using nvim pipes with jq is really cool, for example, you can pipe visually selected json string to <code>jq</code> which will effectively format it)</li>
+<li><code>tmux</code> or <code>zellij</code> for workspace management</li>
+<li><a href="https://github.com/ast-grep/ast-grep"><code>ast-grep</code></a> - helps so much in refactoring.</li>
+<li>and pretty much anything you can use in your terminal.</li>
+</ul>
+<h2 id="6-no-abstraction-in-config">6. No abstraction in config</h2>
+<p>While it would be quickly tempting for perfectionist minds to start writing custom functions for mapping keys to use everywhere (&ldquo;wait, <code>nvim-cmp</code> has its own keymaps table which differs from standard <code>vim.keymap.set</code> function? Hell no, I must write a function that abstracts it away!&rdquo;), I saved so much time avoiding perfectionism and abstractions by writing configuration in a &ldquo;dumb&rdquo; way. If you look at my config, you will notice that it&rsquo;s not quite smart, there are no custom functions, some settings I just copy-pasted from somebody else&rsquo;s config. I think you should not waste time on this, unless you are writing a Neovim distro (God be with you: never found them actually any useful).</p>
+<h2 id="7-start-with-starting-configs-if-you-are-lost">7. Start with starting configs if you are lost</h2>
+<p>Initially, I just copy pasted <a href="github.com/nvim-lua/kickstart.nvim">this config</a> and deleted everything I didn&rsquo;t need, gradually adding things adding up. I don&rsquo;t really like Neovim distributions, though you can use them on the early stages of your journey, but make sure to jump off that ship when you feel more confident.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>I&rsquo;ve learned that you get most power from Vim if you approach it the right way. The editor makes you customize your experience as you want, and it really feels different when you get it. Understanding Neovim got me starting my journey of customizing the perfect dev workflow, and I help this article will help you too. :)</p>
+<p>Link to my config: <a href="https://github.com/thedenisnikulin/nvim">https://github.com/thedenisnikulin/nvim</a></p>
+
+</content>
+<p>
+  
+</p>
+
+
+
+
+  </main>
+  <footer><small>
+  🔥 | 2024
+</small></footer>
+
+    
+</body>
+
+</html>

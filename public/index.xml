@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>(▰˘◡˘▰)</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on (▰˘◡˘▰)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>🔥</copyright>
+    <lastBuildDate>Sat, 27 Jul 2024 14:34:35 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why do big language/framework books exist?</title>
+      <link>http://localhost:1313/posts/why-big-tech-books-exist/</link>
+      <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/why-big-tech-books-exist/</guid>
+      <description>Ever wondered why books such as &amp;ldquo;Mastering Go&amp;rdquo; (798 pages) exist? Like, does anybody really read them from cover to cover? I don&amp;rsquo;t think anyone on Earth just picks it up and reads it like this, and if you want to use it as a handbook, why not just read the documentation instead?&#xA;Moreover, Go is by design a simple language, and learning it must be easy, and if you take this fact away from the language then Go becomes no longer Go, and its deliberate tradeoff of being simple (which is not free of cost) is gone.</description>
+      <content:encoded><![CDATA[<p>Ever wondered why books such as &ldquo;Mastering Go&rdquo; (798 pages) exist? Like, does anybody really read them from cover to cover? I don&rsquo;t think anyone on Earth just picks it up and reads it like this, and if you want to use it as a handbook, why not just read the documentation instead?</p>
+<p>Moreover, Go is by design a simple language, and learning it must be easy, and if you take this fact away from the language then Go becomes no longer Go, and its deliberate tradeoff of being simple (which is not free of cost) is gone.</p>
+<p>Then why would you ever need a 800-page long book to master Go, isn&rsquo;t it, by the very fact, an opposite thing to the language design?</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>When VS Code is unbeatable</title>
+      <link>http://localhost:1313/posts/unbeatable-vscode/</link>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/unbeatable-vscode/</guid>
+      <description>I&amp;rsquo;ve been working on my terminal-only development environment for about 1-2 years already, and during this time, I&amp;rsquo;ve established some common tools that I use on a daily basis, among which are Helix editor, Zellij, lazygit, and a bunch of others. These tools are 99% keyboard-driven, and in order to work with them, you have to know a bunch of keybindings, each having its own ones to get familiar with. I consider myself an above-average-level Vim/Helix movement user.</description>
+      <content:encoded><![CDATA[<p>I&rsquo;ve been working on my terminal-only development environment for about 1-2 years already, and during this time, I&rsquo;ve established some common tools that I use on a daily basis, among which are Helix editor, Zellij, lazygit, and a bunch of others. These tools are 99% keyboard-driven, and in order to work with them, you have to know a bunch of keybindings, each having its own ones to get familiar with. I consider myself an above-average-level Vim/Helix movement user.</p>
+<p>I&rsquo;ve discovered that there&rsquo;s a problem for me that may arise when using keyboard-heavy tools. In particularly stressful situations where you need to act fast (an example would be a production hotfix), I very often find myself having my head completely empty. Like, your muscle memory just gets wiped out in a moment, and you don&rsquo;t know how to do even some basic things. So the problem is that when I get into such stressful situations, I just forget the simplest movements and keymaps. Probably, I&rsquo;m having trouble with stress management, but that&rsquo;s still a thing when you need to act quickly in a stressful environment. What struck me recently is that there&rsquo;s no such problem for me in VS Code, because to use VS Code, you must know nearly zero keymaps or shortcuts. Its visual accessibility makes it a very good match for me in such situations. You just click your mouse on things you see, and it&rsquo;s all good. Having said that, this makes VS Code a perfect fit for me when under pressure.</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>My Approach to Neovim</title>
+      <link>http://localhost:1313/posts/my-approach-to-neovim/</link>
+      <pubDate>Thu, 06 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/my-approach-to-neovim/</guid>
+      <description>The story I always found myself looking towards those terminal based modal editors like Neovim, but every time one thing really held me behind: the amount of time I needed to put into configuration. You have to spend quite a lot of time to configure a stable feature-complete version of Neovim, and it actually doesn&amp;rsquo;t quite pay off in the beginning, because it&amp;rsquo;s so tempting to stay with your comfy VS Code and don&amp;rsquo;t waste time.</description>
+      <content:encoded><![CDATA[<h1 id="the-story">The story</h1>
+<p>I always found myself looking towards those terminal based modal editors like Neovim, but every time one thing really held me behind: the amount of time I needed to put into configuration. You have to spend quite a lot of time to configure a stable feature-complete version of Neovim, and it actually doesn&rsquo;t quite pay off in the beginning, because it&rsquo;s so tempting to stay with your comfy VS Code and don&rsquo;t waste time. I tried to configure Neovim like 3 times in my entire career, every time with a goal to build a complete editor, but having successfully accomplished it only with my latest attempt.</p>
+<p>When I was most disappointed configuring Neovim, I have found Helix, a Neovim alternative with lots of features built in. It really made me interested when I first heard about it. Because configuration is minimal, I could focus more on the editing itself without thinking much about what plugin I need to install next, and so Helix became the editor which introduced modal editing to me. When using Neovim in the beginning, I was more focused on just making it look good (&ldquo;tUrn yOuR vIm iNto a fUlL fEaTuRed IdE&rdquo; kind of videos, you know), but I didn&rsquo;t study much the &ldquo;vim way&rdquo; of editing. I was using only some keys like <code>hjkl</code>, maybe some <code>w</code> and <code>b</code>, sometimes mouse, which by themselves are very far from making the editing experience productive. Though I eventually left Helix, it contributed much to how I approached modal editing.</p>
+<p>After becoming comfortable with Helix, some crazy idea popped up in my head: &ldquo;now if I am good at Helix, and Helix is like Neovim, what if I try to configure Neovim similarly to Helix? Then, with powerful plugin system, I could gradually improve my experience, the thing I cannot do with Helix which lacks plugins&rdquo;. After thinking a little, I&rsquo;ve cleaned my old <code>~/.config/nvim</code> directory, and got my hands dirty. And to my very surprise, the idea worked like a charm: I actually went to a minimally viable working Neovim config with essential plugins and features in a single <code>init.lua</code> file really, really fast! It took me nearly a couple of days to configure without much pain, unlike my any previous attempt. Great!</p>
+<p>I think why it really worked for me this time is because my requirements for an editor were much more &ldquo;real&rdquo; when I switched from Helix to Neovim. When you switch from something like VSCode, you want those features that GUI editors have, which are mostly very different from what you get in modal editors. You switch the editing paradigm which you haven&rsquo;t yet understood and accepted, and that&rsquo;s why you expect something from Neovim which it cannot provide (for good though). That&rsquo;s why some people misinterpret Neovim as being an IDE, because they want to see it as an IDE, which eventually lead to frustration.</p>
+<p>What I learned from this is that Neovim is a different code editor. And if you want to learn it well, you should approach it differently, as a new thing, without bringing your old habits from traditional editors.</p>
+<h1 id="the-approach">The approach</h1>
+<p>Below are the points that changed Neovim for me. Having all these makes me really happy with my current configuration.</p>
+<h2 id="1-keymaps">1. Keymaps</h2>
+<p>I really like the way keymaps are organized in Helix. So my keymaps are organized in a similar way.
+Basically, I have 2 types (in Helix they are called &ldquo;modes&rdquo;) of keymaps - <code>goto</code> and <code>space</code> keymaps. Goto are those keymaps which make you jump somewhere, like &ldquo;Go to definition&rdquo;, &ldquo;Go to next buffer&rdquo;, etc. Space are general purpose (space because it&rsquo;s the leader key).</p>
+<p>My space keymaps (not exhaustive):
+<img src="/8eqmtlv5iecb07emovmv.png" alt="My space keymaps (not exhaustive)"></p>
+<p>My goto keymaps:
+<img src="/vx1pgnrs8xvc10f13rlz.png" alt="My goto keymaps"></p>
+<h2 id="2-much-of-telescope">2. Much of Telescope</h2>
+<p>You can use Telescope for so much of things! File browser, notification history, keymaps browser, filetypes picker, diagnostics, git, DAP command picker, and so on. It&rsquo;s a such fundamental tool that I can&rsquo;t imagine using Neoivm without it.</p>
+<p>It just fits so good with Neovim. I don&rsquo;t really like split windows because they are somewhat clumsy in terminal editors, that&rsquo;s why I don&rsquo;t have <code>nerdtree</code> and don&rsquo;t use <code>nvim-dap-ui</code>: I find such &ldquo;util splits&rdquo; not so pleasant to work with. Telescope file browser and <code>dap.ui.widgets</code> are just much better (though the latter is not Telescope, but neither is a split window). And a lot of things can be implemented with Telescope. It contributes a very huge part to overall editing experience.</p>
+<p>Telescope File browser
+<img src="/xg5jl0r3cxwoeoe73y2f.png" alt="Image description"></p>
+<p>Git commits with Telescope
+<img src="/10p1n4ktcj36uqbtgs2h.png" alt="Image description"></p>
+<p>DAP commands with Telescope
+<img src="/ufkh7oehwfkuhvxgh8hx.png" alt="Image description"></p>
+<h2 id="3-enhanced-movement">3. Enhanced movement</h2>
+<p>There&rsquo;s not much to say: using <code>leap.nvim</code> adds up to editing speed on mid-range movements, can&rsquo;t really edit in nvim without it.</p>
+<h2 id="4-nice-ui">4. Nice UI</h2>
+<p>Not related to &ldquo;the approach&rdquo;, but made me enjoy the editor much more</p>
+<p>Normal mode commands, search, code actions at screen center with nice round corners
+<img src="/z1mhxvrq68cp9oww7zb8.png" alt="Image description"></p>
+<p><img src="/0c5k543n38sxnav0axhf.png" alt="Image description"></p>
+<p><img src="/6qnleduueeo9jcr1ay65.png" alt="Image description"></p>
+<p>Pretty notifications</p>
+<p><img src="/ar49akbux5mg31a0nbeo.png" alt="Image description"></p>
+<h2 id="5-use-other-tools">5. Use other tools</h2>
+<p>I think Neovim is a very powerful editor, but it&rsquo;s still and editor, and sometimes you need more than this. You have so much CLI tools, and the power of pipes, use it to complement your Neovim experience. The following are just some from the top of my head:</p>
+<ul>
+<li><code>jq</code> for json manipulations (using nvim pipes with jq is really cool, for example, you can pipe visually selected json string to <code>jq</code> which will effectively format it)</li>
+<li><code>tmux</code> or <code>zellij</code> for workspace management</li>
+<li><a href="https://github.com/ast-grep/ast-grep"><code>ast-grep</code></a> - helps so much in refactoring.</li>
+<li>and pretty much anything you can use in your terminal.</li>
+</ul>
+<h2 id="6-no-abstraction-in-config">6. No abstraction in config</h2>
+<p>While it would be quickly tempting for perfectionist minds to start writing custom functions for mapping keys to use everywhere (&ldquo;wait, <code>nvim-cmp</code> has its own keymaps table which differs from standard <code>vim.keymap.set</code> function? Hell no, I must write a function that abstracts it away!&rdquo;), I saved so much time avoiding perfectionism and abstractions by writing configuration in a &ldquo;dumb&rdquo; way. If you look at my config, you will notice that it&rsquo;s not quite smart, there are no custom functions, some settings I just copy-pasted from somebody else&rsquo;s config. I think you should not waste time on this, unless you are writing a Neovim distro (God be with you: never found them actually any useful).</p>
+<h2 id="7-start-with-starting-configs-if-you-are-lost">7. Start with starting configs if you are lost</h2>
+<p>Initially, I just copy pasted <a href="github.com/nvim-lua/kickstart.nvim">this config</a> and deleted everything I didn&rsquo;t need, gradually adding things adding up. I don&rsquo;t really like Neovim distributions, though you can use them on the early stages of your journey, but make sure to jump off that ship when you feel more confident.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>I&rsquo;ve learned that you get most power from Vim if you approach it the right way. The editor makes you customize your experience as you want, and it really feels different when you get it. Understanding Neovim got me starting my journey of customizing the perfect dev workflow, and I help this article will help you too. :)</p>
+<p>Link to my config: <a href="https://github.com/thedenisnikulin/nvim">https://github.com/thedenisnikulin/nvim</a></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Type-level Bubble Sort in Rust: Part 2</title>
+      <link>http://localhost:1313/posts/type-level-bubble-sort-2/</link>
+      <pubDate>Wed, 16 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/type-level-bubble-sort-2/</guid>
+      <description>Hello everyone! In the previous post from this series we discussed traits, type-level number representation, and implementation of basic type-level computations. The topic of this article is type-level lists. Make some tea or coffee and let&amp;rsquo;s dive into the details!&#xA;Image source: link&#xA;Type-level lists There&amp;rsquo;s a data structure that you are most probably familiar with - a linked list. Each element of a linked list stores a value and points to the next element, and the last element of such list points to nothing.</description>
+      <content:encoded><![CDATA[<p>Hello everyone! In the <a href="https://dev.to/thedenisnikulin/type-level-bubble-sort-in-rust-part-1-3mcb">previous post from this series</a> we discussed traits, type-level number representation, and implementation of basic type-level computations. The topic of this article is type-level lists. Make some tea or coffee and let&rsquo;s dive into the details!</p>
+<p><img src="/cfu16rhpxitb5hlza9tv.jpeg" alt="Rust-chan UwU"> Image source: <a href="https://twitter.com/maiRandomness/status/1011951419228852224?s=20&amp;t=X-E0v8wIzSATDxXeNEmZZQ">link</a></p>
+<h2 id="type-level-lists">Type-level lists</h2>
+<p>There&rsquo;s a data structure that you are most probably familiar with - a linked list. Each element of a linked list stores a value and points to the next element, and the last element of such list points to nothing. This data structure is easily represented with <strong>recursion</strong>, where the &ldquo;nothing&rdquo; is the base case, and an &ldquo;element&rdquo; is the recursive case. We actually will work with recursion quite a lot (the comparison of type-level numbers was also based on recursion), so you may need to learn to understand it.</p>
+<p>The way we can define the list in Rust:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Nil</span>; <span style="color:#75715e">// a &#34;null&#34; ref
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Cons</span><span style="color:#f92672">&lt;</span>H, T<span style="color:#f92672">&gt;</span>(H, T); <span style="color:#75715e">// value and a ref to next element
+</span></span></span></code></pre></div><p>The way we can use it in Rust:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span>Cons<span style="color:#f92672">&lt;</span>Succ<span style="color:#f92672">&lt;</span>Zero<span style="color:#f92672">&gt;</span>, Cons<span style="color:#f92672">&lt;</span>Zero, Cons<span style="color:#f92672">&lt;</span>Zero, Nil<span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#75715e">// a typical type-level list
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Cons<span style="color:#f92672">&lt;</span>Zero, Nil<span style="color:#f92672">&gt;</span> <span style="color:#75715e">// smol type-level list
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Nil <span style="color:#75715e">// the smolest of them all
+</span></span></span></code></pre></div><p>The above examples are the same thing as <code>[1, 0, 0]</code>, <code>[0]</code>, and <code>[]</code> respectively on the value level.
+The names <code>cons</code> and <code>nil</code> are terms from functional programming, but don&rsquo;t let them confuse you, it&rsquo;s just a fancy way of saying things (<a href="https://en.wikipedia.org/wiki/Cons">wikipedia page</a> if you&rsquo;re curious). Also, the type parameters are named after terms <code>head</code> and <code>tail</code>.</p>
+<h2 id="defining-basic-computations">Defining basic computations</h2>
+<p>When implementing bubble sort, we will need a lot of helper &ldquo;functions&rdquo; for things like concatenation, swapping, and some others operations on list&rsquo;s elements. Let&rsquo;s define a trait that will represent an operation for <code>prepend</code>ing a number to a list.</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#75715e">// the naming &#34;ComputeX&#34; is used only for convenience,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// we will have a type alias named simply &#34;Prepend&#34; later on.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">trait</span> ComputePrepend<span style="color:#f92672">&lt;</span>N<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Output</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>The number <code>N</code> will be prepended to the list for which this trait will be implemented.</p>
+<p>The implementations:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">impl</span><span style="color:#f92672">&lt;</span>N<span style="color:#f92672">&gt;</span> ComputePrepend<span style="color:#f92672">&lt;</span>N<span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">for</span> Nil {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Output</span> <span style="color:#f92672">=</span> Cons<span style="color:#f92672">&lt;</span>N, Nil<span style="color:#f92672">&gt;</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>This is quite simple: we prepend arbitrary <code>N</code> to <code>Nil</code> and that results in <code>Cons&lt;N, Nil&gt;</code>.</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">impl</span><span style="color:#f92672">&lt;</span>N, H, T<span style="color:#f92672">&gt;</span> ComputePrepend<span style="color:#f92672">&lt;</span>N<span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">for</span> Cons<span style="color:#f92672">&lt;</span>H, T<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Output</span> <span style="color:#f92672">=</span> Cons<span style="color:#f92672">&lt;</span>N, Cons<span style="color:#f92672">&lt;</span>H, T<span style="color:#f92672">&gt;&gt;</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>Here we prepend <code>N</code> to <code>Cons&lt;H, T&gt;</code>. This also seems not so hard to get.</p>
+<p>Let&rsquo;s define the type alias:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Prepend</span><span style="color:#f92672">&lt;</span>N, L<span style="color:#f92672">&gt;</span> <span style="color:#f92672">=</span> <span style="color:#f92672">&lt;</span>L <span style="color:#66d9ef">as</span> ComputePrepend<span style="color:#f92672">&lt;</span>N<span style="color:#f92672">&gt;&gt;</span>::Output;</span></span></code></pre></div><p>and test it:</p>
+<p><img src="/gnwjft9wgkix90yky87z.png" alt="prepending demo"></p>
+<p>The compiler inferred <code>Cons&lt;Zero, Cons&lt;Succ&lt;Zero&gt;, Nil&gt;&gt;</code> for us, great! Now we have a basic understanding of numbers, lists, and trait multidispatching. We can use it to write the rest of helper traits for our bubble sort algorithm. But first, let&rsquo;s define the algorithm itself.</p>
+<h2 id="recursive-bubble-sort-algorithm">Recursive bubble sort algorithm</h2>
+<p>Here&rsquo;s the implementation of value-level bubble sort algorithm in pseudo-code with heavy usage of recursion.</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">bubble_sort</span>(arr)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (arr.len() <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">return</span> arr
+</span></span><span style="display:flex;"><span>    bubbled <span style="color:#f92672">=</span> bubble(arr)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> prepend(bubbled.head, bubble_sort(bubbled.tail));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">bubble</span>(arr)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (arr.len() <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">return</span> arr
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> prepend(arr.head, swapIfLess(arr.head, bubble(arr.tail)))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">swapIfLess</span>(head, tail) -&gt; <span style="color:#a6e22e">arr</span> <span style="color:#75715e">// swap tail[0] with head if tail[0] &lt; head
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">prepend</span>(head, tail) -&gt; <span style="color:#a6e22e">arr</span> <span style="color:#75715e">//...
+</span></span></span></code></pre></div><p>Quick code explanation. In the function <code>bubble</code> , we move the least element of <code>arr</code> to the very beginning of the list (i.e. to the head). Then we cut the head off of the arr (since we consider the head sorted) and do the same <code>bubble</code> thing on the tail and again cut the head of that tail off, until the length is 0, and then we construct the whole array by prepending the heads back to their places.</p>
+<p>Notice that the implementation is adapted so that it is more convenient for us to express the logic on traits. For example, instead of using <code>swapIfLess</code> it should be written as <code>if (...) swap(...)</code>. Although we could define some traits to define <code>if-else</code> logic, I find it cleaner for now to settle for <code>swapIfLess</code> thing.</p>
+<p>Actually, there&rsquo;s a problem with this approach. Look at this line:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">return</span> prepend(arr.head, swapIfLess(arr.head, bubble(arr.tail)))</span></span></code></pre></div><p>The code assumes that <code>arr</code> is passed around by reference, like in javascript for example. For instance, if <code>swapIfLess(arr.head, ...)</code> function mutates <code>arr.head</code> as a result of swapping, the head from <code>prepend(arr.head, ...)</code> is also mutated. We can&rsquo;t mutate anything on the type level, so we need to adapt the implementation for this case.
+To solve this, I will define conditional <code>swap</code> and <code>prepend</code> functions as one trait.</p>
+<blockquote>
+<p>It doesn&rsquo;t mean that there&rsquo;s no other workaround for this problem, if you have a better solution, I would be happy to see it!</p>
+</blockquote>
+<h2 id="bubble-sort-helper-traits">Bubble sort helper traits</h2>
+<p>Let&rsquo;s define that big-arse <code>SwapPrepend</code> trait:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">trait</span> ComputeSwapPrepend<span style="color:#f92672">&lt;</span>E, H<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Output</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>Where <code>E</code> is for &ldquo;equality&rdquo; and <code>H</code> is for &ldquo;head&rdquo;. We will define implementations of this trait for different equality types, so for each equality type the computation result will be different (i.e. a decision &ldquo;to swap or not to swap&rdquo; depending on the equality of <code>head</code> and <code>tail[0]</code>).</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#75715e">// For Nil, we just prepend the `Head`
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">impl</span><span style="color:#f92672">&lt;</span>E: <span style="color:#a6e22e">Equality</span>, Head: <span style="color:#a6e22e">Nat</span><span style="color:#f92672">&gt;</span> ComputeSwapPrepend<span style="color:#f92672">&lt;</span>E, Head<span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">for</span> Nil {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Output</span> <span style="color:#f92672">=</span> Cons<span style="color:#f92672">&lt;</span>Head, Nil<span style="color:#f92672">&gt;</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// When `Head` and `A` (i.e. &#39;head&#39; and &#39;tail[0]&#39; as in the
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// pseudo-code example above) are equal, also just prepend the `Head`
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">impl</span><span style="color:#f92672">&lt;</span>A, Other, Head<span style="color:#f92672">&gt;</span> ComputeSwapPrepend<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">EQ</span>, Head<span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">for</span> Cons<span style="color:#f92672">&lt;</span>A, Other<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Output</span> <span style="color:#f92672">=</span> Cons<span style="color:#f92672">&lt;</span>Head, Cons<span style="color:#f92672">&lt;</span>A, Other<span style="color:#f92672">&gt;&gt;</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// When `Head` &gt; `A`, just prepend
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">impl</span><span style="color:#f92672">&lt;</span>A, Other, Head<span style="color:#f92672">&gt;</span> ComputeSwapPrepend<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">GT</span>, Head<span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">for</span> Cons<span style="color:#f92672">&lt;</span>A, Other<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Output</span> <span style="color:#f92672">=</span> Cons<span style="color:#f92672">&lt;</span>Head, Cons<span style="color:#f92672">&lt;</span>A, Other<span style="color:#f92672">&gt;&gt;</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// When `Head` &lt; `A`, we finally swap and prepend.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">impl</span><span style="color:#f92672">&lt;</span>A, Other, Head<span style="color:#f92672">&gt;</span> ComputeSwapPrepend<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">GT</span>, Head<span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">for</span> Cons<span style="color:#f92672">&lt;</span>A, Other<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Output</span> <span style="color:#f92672">=</span> Cons<span style="color:#f92672">&lt;</span>A, Cons<span style="color:#f92672">&lt;</span>Head, Other<span style="color:#f92672">&gt;&gt;</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">SwapPrepend</span><span style="color:#f92672">&lt;</span>E, H, L<span style="color:#f92672">&gt;</span> <span style="color:#f92672">=</span> <span style="color:#f92672">&lt;</span>L <span style="color:#66d9ef">as</span> ComputeSwapPrepend<span style="color:#f92672">&lt;</span>E, H<span style="color:#f92672">&gt;&gt;</span>::Output;</span></span></code></pre></div><p>Next, we define one more comparison trait, but this time it will compare <strong>a natural number</strong> with <strong>a list</strong> (i.e. with the list&rsquo;s head). It will help us to compare numbers when we will be implementing a trait for <code>Cons&lt;Head, Tail&gt;</code> where we can&rsquo;t simply get the first element of <code>Tail</code> to compare it with the <code>Head</code> with the old <code>Compare</code> trait, so the new <code>Compare</code> trait will help us with resolving the <code>Tail</code>&rsquo;s first element.</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">trait</span> ComputeCompare<span style="color:#f92672">&lt;</span>Rhs: <span style="color:#a6e22e">Nat</span><span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Output</span>: <span style="color:#a6e22e">Equality</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// This impl is only used for completeness.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// We will use `Compare` trait in tandem with `SwapPrepend` trait,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// and `&lt;Nil as SwapPrepend&lt;T, H&gt;&gt;::Output` thing doesn&#39;t 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// compare anything and only prepends.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// So the `Output` type doesn&#39;t matter in this context.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">impl</span><span style="color:#f92672">&lt;</span>Num: <span style="color:#a6e22e">Nat</span><span style="color:#f92672">&gt;</span> ComputeCompare<span style="color:#f92672">&lt;</span>Num<span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">for</span> Nil {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Output</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">LT</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Just compare `Head` with `Num`.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// `CompareNat` is the old natural number comparison trait.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">impl</span><span style="color:#f92672">&lt;</span>Head, Num, Tail<span style="color:#f92672">&gt;</span> ComputeCompare<span style="color:#f92672">&lt;</span>Num<span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">for</span> Cons<span style="color:#f92672">&lt;</span>Head, Tail<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">where</span> Head: <span style="color:#a6e22e">Nat</span> <span style="color:#f92672">+</span> ComputeCompareNat<span style="color:#f92672">&lt;</span>Num<span style="color:#f92672">&gt;</span>,
+</span></span><span style="display:flex;"><span>          Num: <span style="color:#a6e22e">Nat</span> <span style="color:#f92672">+</span> ComputeCompareNat<span style="color:#f92672">&lt;</span>Head<span style="color:#f92672">&gt;</span>,
+</span></span><span style="display:flex;"><span>          Tail: <span style="color:#a6e22e">List</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Output</span> <span style="color:#f92672">=</span> CompareNat<span style="color:#f92672">&lt;</span>Head, Num<span style="color:#f92672">&gt;</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Compare</span><span style="color:#f92672">&lt;</span>N, Ls<span style="color:#f92672">&gt;</span> <span style="color:#f92672">=</span> <span style="color:#f92672">&lt;</span>Ls <span style="color:#66d9ef">as</span> ComputeCompare<span style="color:#f92672">&lt;</span>N<span style="color:#f92672">&gt;&gt;</span>::Output;</span></span></code></pre></div><p>Above are also some trait bounds for the traits which we should specify to make the situation clear for the compiler.</p>
+<p>They are pretty simple:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">trait</span> Nat {}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">impl</span> Nat <span style="color:#66d9ef">for</span> Zero {}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">impl</span><span style="color:#f92672">&lt;</span>N: <span style="color:#a6e22e">Nat</span><span style="color:#f92672">&gt;</span> Nat <span style="color:#66d9ef">for</span> Succ<span style="color:#f92672">&lt;</span>N<span style="color:#f92672">&gt;</span> {}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">trait</span> List {}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">impl</span> List <span style="color:#66d9ef">for</span> Nil {}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">impl</span><span style="color:#f92672">&lt;</span>H: <span style="color:#a6e22e">Nat</span>, T: <span style="color:#a6e22e">List</span><span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">for</span> Cons<span style="color:#f92672">&lt;</span>H, T<span style="color:#f92672">&gt;</span> {}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">trait</span> Equality {}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">impl</span> Equality <span style="color:#66d9ef">for</span> <span style="color:#66d9ef">EQ</span> {}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">impl</span> Equality <span style="color:#66d9ef">for</span> <span style="color:#66d9ef">LT</span> {}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">impl</span> Equality <span style="color:#66d9ef">for</span> <span style="color:#66d9ef">GT</span> {}</span></span></code></pre></div><p>And finally, some little things which will come in handy:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">HeadOf</span><span style="color:#f92672">&lt;</span>L<span style="color:#f92672">&gt;</span> <span style="color:#f92672">=</span> <span style="color:#f92672">&lt;</span>L <span style="color:#66d9ef">as</span> ComputeHead<span style="color:#f92672">&gt;</span>::Output;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">TailOf</span><span style="color:#f92672">&lt;</span>L<span style="color:#f92672">&gt;</span> <span style="color:#f92672">=</span> <span style="color:#f92672">&lt;</span>L <span style="color:#66d9ef">as</span> ComputeTail<span style="color:#f92672">&gt;</span>::Output;</span></span></code></pre></div><p>Their functionality is quite simple, try to understand how they are implemented by yourself.</p>
+<h2 id="bubbling">Bubbling</h2>
+<p>Now, we are on the key part of the algorithm.</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">trait</span> ComputeBubble {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Output</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">impl</span> ComputeBubble <span style="color:#66d9ef">for</span> Nil {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Output</span> <span style="color:#f92672">=</span> Nil;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">impl</span><span style="color:#f92672">&lt;</span>Head, Tail<span style="color:#f92672">&gt;</span> ComputeBubble <span style="color:#66d9ef">for</span> Cons<span style="color:#f92672">&lt;</span>Head, Tail<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Some big &amp; scary bounds
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">where</span> Head: <span style="color:#a6e22e">Nat</span>,
+</span></span><span style="display:flex;"><span>          Tail: <span style="color:#a6e22e">List</span> <span style="color:#f92672">+</span> ComputeBubble <span style="color:#f92672">+</span> ComputeCompare<span style="color:#f92672">&lt;</span>Head<span style="color:#f92672">&gt;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&lt;</span>Tail <span style="color:#66d9ef">as</span> ComputeBubble<span style="color:#f92672">&gt;</span>::Output: <span style="color:#a6e22e">ComputeSwapPrepend</span><span style="color:#f92672">&lt;&lt;</span>Tail <span style="color:#66d9ef">as</span> ComputeCompare<span style="color:#f92672">&lt;</span>Head<span style="color:#f92672">&gt;&gt;</span>::Output, Head<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Output</span> <span style="color:#f92672">=</span> SwapPrepend<span style="color:#f92672">&lt;</span>Compare<span style="color:#f92672">&lt;</span>Head, Tail<span style="color:#f92672">&gt;</span>, Head, Bubble<span style="color:#f92672">&lt;</span>Tail<span style="color:#f92672">&gt;&gt;</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Bubble</span><span style="color:#f92672">&lt;</span>Ls<span style="color:#f92672">&gt;</span> <span style="color:#f92672">=</span> <span style="color:#f92672">&lt;</span>Ls <span style="color:#66d9ef">as</span> ComputeBubble<span style="color:#f92672">&gt;</span>::Output;</span></span></code></pre></div><p>The <code>Output</code> type computation is not that difficult, try to understand how it does the job by yourself.
+You can see that the 3rd trait bound is quite ugly. It just means something like &ldquo;The result of <code>bubbling the Tail</code> must support <code>swap &amp; prepending the Head</code>&rdquo;.</p>
+<h2 id="bubble-sorting">Bubble sorting</h2>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">trait</span> ComputeBubbleSort {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Bubbled</span>: <span style="color:#a6e22e">List</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Output</span>: <span style="color:#a6e22e">List</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">impl</span> ComputeBubbleSort <span style="color:#66d9ef">for</span> Nil {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Bubbled</span> <span style="color:#f92672">=</span> Nil;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Output</span> <span style="color:#f92672">=</span> Nil;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">impl</span><span style="color:#f92672">&lt;</span>Head, Tail<span style="color:#f92672">&gt;</span> ComputeBubbleSort <span style="color:#66d9ef">for</span> Cons<span style="color:#f92672">&lt;</span>Head, Tail<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Oh geez...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">where</span> Head: <span style="color:#a6e22e">Nat</span>,
+</span></span><span style="display:flex;"><span>        Tail: <span style="color:#a6e22e">List</span> <span style="color:#f92672">+</span> ComputeBubble <span style="color:#f92672">+</span> ComputeCompare<span style="color:#f92672">&lt;</span>Head<span style="color:#f92672">&gt;</span> <span style="color:#f92672">+</span> ComputePrepend<span style="color:#f92672">&lt;</span>Head<span style="color:#f92672">&gt;</span> <span style="color:#f92672">+</span> ComputeBubbleSort,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;</span>Tail <span style="color:#66d9ef">as</span> ComputeBubble<span style="color:#f92672">&gt;</span>::Output: <span style="color:#a6e22e">ComputeSwapPrepend</span><span style="color:#f92672">&lt;&lt;</span>Tail <span style="color:#66d9ef">as</span> ComputeCompare<span style="color:#f92672">&lt;</span>Head<span style="color:#f92672">&gt;&gt;</span>::Output, Head<span style="color:#f92672">&gt;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;&lt;</span>Tail <span style="color:#66d9ef">as</span> ComputeBubble<span style="color:#f92672">&gt;</span>::Output <span style="color:#66d9ef">as</span> ComputeSwapPrepend<span style="color:#f92672">&lt;&lt;</span>Tail <span style="color:#66d9ef">as</span> ComputeCompare<span style="color:#f92672">&lt;</span>Head<span style="color:#f92672">&gt;&gt;</span>::Output, Head<span style="color:#f92672">&gt;&gt;</span>::Output: <span style="color:#a6e22e">ComputeHead</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;&lt;</span>Tail <span style="color:#66d9ef">as</span> ComputeBubble<span style="color:#f92672">&gt;</span>::Output <span style="color:#66d9ef">as</span> ComputeSwapPrepend<span style="color:#f92672">&lt;&lt;</span>Tail <span style="color:#66d9ef">as</span> ComputeCompare<span style="color:#f92672">&lt;</span>Head<span style="color:#f92672">&gt;&gt;</span>::Output, Head<span style="color:#f92672">&gt;&gt;</span>::Output: <span style="color:#a6e22e">ComputeTail</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;&lt;&lt;</span>Tail <span style="color:#66d9ef">as</span> ComputeBubble<span style="color:#f92672">&gt;</span>::Output <span style="color:#66d9ef">as</span> ComputeSwapPrepend<span style="color:#f92672">&lt;&lt;</span>Tail <span style="color:#66d9ef">as</span> ComputeCompare<span style="color:#f92672">&lt;</span>Head<span style="color:#f92672">&gt;&gt;</span>::Output, Head<span style="color:#f92672">&gt;&gt;</span>::Output <span style="color:#66d9ef">as</span> ComputeTail<span style="color:#f92672">&gt;</span>::Output: <span style="color:#a6e22e">ComputeBubbleSort</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;&lt;&lt;&lt;</span>Tail <span style="color:#66d9ef">as</span> ComputeBubble<span style="color:#f92672">&gt;</span>::Output <span style="color:#66d9ef">as</span> ComputeSwapPrepend<span style="color:#f92672">&lt;&lt;</span>Tail <span style="color:#66d9ef">as</span> ComputeCompare<span style="color:#f92672">&lt;</span>Head<span style="color:#f92672">&gt;&gt;</span>::Output, Head<span style="color:#f92672">&gt;&gt;</span>::Output <span style="color:#66d9ef">as</span> ComputeTail<span style="color:#f92672">&gt;</span>::Output <span style="color:#66d9ef">as</span> ComputeBubbleSort<span style="color:#f92672">&gt;</span>::Output: <span style="color:#a6e22e">ComputePrepend</span><span style="color:#f92672">&lt;&lt;&lt;&lt;</span>Tail <span style="color:#66d9ef">as</span> ComputeBubble<span style="color:#f92672">&gt;</span>::Output <span style="color:#66d9ef">as</span> ComputeSwapPrepend<span style="color:#f92672">&lt;&lt;</span>Tail <span style="color:#66d9ef">as</span> ComputeCompare<span style="color:#f92672">&lt;</span>Head<span style="color:#f92672">&gt;&gt;</span>::Output, Head<span style="color:#f92672">&gt;&gt;</span>::Output <span style="color:#66d9ef">as</span> ComputeHead<span style="color:#f92672">&gt;</span>::Output<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Bubbled</span> <span style="color:#f92672">=</span> Bubble<span style="color:#f92672">&lt;</span>Cons<span style="color:#f92672">&lt;</span>Head, Tail<span style="color:#f92672">&gt;&gt;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Output</span> <span style="color:#f92672">=</span> Prepend<span style="color:#f92672">&lt;</span>HeadOf<span style="color:#f92672">&lt;</span>Self::Bubbled<span style="color:#f92672">&gt;</span>, BubbleSort<span style="color:#f92672">&lt;</span>TailOf<span style="color:#f92672">&lt;</span>Self::Bubbled<span style="color:#f92672">&gt;&gt;&gt;</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">BubbleSort</span><span style="color:#f92672">&lt;</span>Ls<span style="color:#f92672">&gt;</span> <span style="color:#f92672">=</span> <span style="color:#f92672">&lt;</span>Ls <span style="color:#66d9ef">as</span> ComputeBubbleSort<span style="color:#f92672">&gt;</span>::Output;</span></span></code></pre></div><p>Again, the <code>Output</code> type is not what scares, but the trait bounds. Actually, I didn&rsquo;t write them by myself, these bounds where suggested by compiler. We can think of them as just a thing to make the compiler satisfied about the types. You can run <code>rustfmt</code> on the code to prettify it if you want to dig into what, for example, the last bound is for, but it can be briefly described as &ldquo;the result of computing trait A must implement trait B&rdquo;, but following the whole chain of trait invocations.</p>
+<p>As I know, there isn&rsquo;t a way to specify an implied trait bound (that is, we know that the result of <code>BubbleSort&lt;TailOf&lt;Bubble&lt;Cons&lt;..&gt;&gt;&gt;&gt;</code> is a <code>List</code>, but for the compiler to be satisfied we must write the whole chain of invocations like <code>&lt;&lt;Cons&lt;..&gt; as Bubble&gt;::Output as TailOf&gt;::Output as BubbleSort and etc</code> in the trait bounds) in current version of Rust, but there&rsquo;s <a href="https://rust-lang.github.io/rfcs/2089-implied-bounds.html">an RFC</a> for this thing which is not implemented yet.</p>
+<h2 id="testing">Testing</h2>
+<p><img src="/4aoi43ihq8hmoymm7oys.png" alt="Bubble sort testing"></p>
+<p>The computed natural number types were expanded, but you can see that the list became sorted (the <code>N1</code>, <code>N2</code> types are just aliases for <code>Succ&lt;Zero&gt;</code> and <code>Succ&lt;Succ&lt;Zero&gt;&gt;</code>).</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>The implementation is far from being perfect, but at least it works. There are ugly trait bounds which are completely unreadable, and I don&rsquo;t know any way to simplify them. But it&rsquo;s enough to show what the Rust&rsquo;s type system is capable of.
+It is not worth to say that this variation of algorithm is not practically useful. But it is a good way to challenge your mind and try something extraordinary!</p>
+<p>The full source code:</p>
+<blockquote>
+<p><a href="https://github.com/thedenisnikulin/type-level-sort">https://github.com/thedenisnikulin/type-level-sort</a></p>
+</blockquote>
+<h2 id="links">Links</h2>
+<p><a href="https://willcrichton.net/notes/type-level-programming/">A much more practically useful type-level programming in Rust</a> <br>
+<a href="https://github.com/willcrichton/tyrade">A macro to define type-level logic with value-level syntax in Rust</a> <br>
+<a href="https://sdleffler.github.io/RustTypeSystemTuringComplete/">Type-level Brainfuck in Rust</a> <br>
+<a href="https://beachape.com/blog/2017/03/12/gentle-intro-to-type-level-recursion-in-Rust-from-zero-to-frunk-hlist-sculpting/">&ldquo;Gentle Intro to Type-level Recursion in Rust&rdquo; </a> <br>
+<a href="https://blog.auxon.io/2019/10/25/type-level-registers/">Type-level registers in Rust</a> <br>
+<a href="https://blog.rockthejvm.com/type-level-quicksort/">Type-level quicksort in Scala&quot;</a> <br>
+<a href="https://gist.github.com/pxqr/3754181">Type-level sorting algorithms in Haskell</a> <br>
+<a href="https://github.com/ronami/meta-typing">A repo with functions and algorithms implemented purely on types in TypeScript</a> \</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Type-level Bubble Sort in Rust: Part 1</title>
+      <link>http://localhost:1313/posts/type-level-bubble-sort-1/</link>
+      <pubDate>Thu, 03 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/type-level-bubble-sort-1/</guid>
+      <description>In this series of articles, we are going to implement bubble sort algorithm on the type level using (abusing) Rust&amp;rsquo;s type system, which is Turing-complete.&#xA;The goal I want to accomplish by these articles is to help you understand what type level programming feels like, try to clear what&amp;rsquo;s behind of all these &amp;ldquo;traits&amp;rdquo; and &amp;ldquo;impls&amp;rdquo;, and to show what Rust&amp;rsquo;s type system is capable of.&#xA;Before jumping in, you may need to have a basic understanding of Rust programming language (although the understanding of some FP language like Haskell or Scala should be also good enough).</description>
+      <content:encoded><![CDATA[<p>In this series of articles, we are going to implement bubble sort algorithm on the type level using (abusing) Rust&rsquo;s type system, which is <a href="https://sdleffler.github.io/RustTypeSystemTuringComplete/">Turing-complete</a>.</p>
+<p>The goal I want to accomplish by these articles is to help you understand what type level programming feels like, try to clear what&rsquo;s behind of all these &ldquo;traits&rdquo; and &ldquo;impls&rdquo;, and to show what Rust&rsquo;s type system is capable of.</p>
+<p>Before jumping in, you may need to have a basic understanding of Rust programming language (although the understanding of some FP language like Haskell or Scala should be also good enough).</p>
+<p>Basically, type level programming allows us to carry the computations to the compilation phase where the compiler infers relationships between types, rather than computing the values during the program runtime.</p>
+<p><img src="/prin3njjdqf4r3zgiuaz.png" alt="Some memes"></p>
+<h2 id="how-do-we-express-conditional-logic-with-types">How do we express conditional logic with types?</h2>
+<p>We will use the power of <strong>traits</strong>. Traits are just like interfaces in C#/Java, except that you can implement traits for existing types (so the mindset is not &ldquo;a type implements this interface&rdquo; but rather &ldquo;there&rsquo;s an implementation of this trait for a type&rdquo;).
+Combined with generics, it gives us an ability to write multiple trait implementations for a single type just with different generic type arguments, allowing the compiler to <strong>decide</strong> what implementation must be picked for a particular case. Let&rsquo;s call it <a href="http://smallcultfollowing.com/babysteps/blog/2014/09/30/multi-and-conditional-dispatch-in-traits/">multidispatch</a>.</p>
+<p>We will see this in practice a bit later, for now, let&rsquo;s focus on numbers.</p>
+<h2 id="numbers">Numbers</h2>
+<p>Well, how do we represent type-level numbers? We can certainly declare a lot of structs for each possible natural number like <code>struct Num1; struct Num2; etc </code> but that&rsquo;s just not a good idea (and is actually impossible since there are infinite amount of natural numbers). We will use <a href="https://en.wikipedia.org/wiki/Peano_axioms">Peano number encoding</a>.</p>
+<p>Simply put, natural numbers are just all non-negative numbers counted from 0 to infinity one by one. There comes the hint! One comes after zero, two comes after one, so we can say that number 1 is a successor of 0, and number 2 is a successor of successor of 0. This is how Peano numbers encoding work!</p>
+<p>In Rust code it&rsquo;s going to look this way:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Zero</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Succ</span><span style="color:#f92672">&lt;</span>N<span style="color:#f92672">&gt;</span>(N);</span></span></code></pre></div><p>For example, in order to represent number 4 we will write this:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span>Succ<span style="color:#f92672">&lt;</span>Succ<span style="color:#f92672">&lt;</span>Succ<span style="color:#f92672">&lt;</span>Succ<span style="color:#f92672">&lt;</span>Zero<span style="color:#f92672">&gt;&gt;&gt;&gt;</span></span></span></code></pre></div><h2 id="number-comparison">Number comparison</h2>
+<p>Next important thing about numbers in context of sorting is <strong>comparison</strong>.</p>
+<p>Peano numbers comparison is based on the following rules:</p>
+<ol>
+<li><code>0 &lt;= X</code> for every X</li>
+<li><code>Succ(X) &gt;= Succ(Y)</code> if X &gt;= Y</li>
+</ol>
+<p>For example, let&rsquo;s try to calculate whether 2 is less than 3 with the help of the above rules. Is 2 less than 3? We can&rsquo;t certainly answer, and according to the 2nd rule we need to compare their predecessors. Is 1 less than 2? Again, we can&rsquo;t say. Is 0 less than 1? Yes, it is true according to the 1st rule. We have proved that 2 is less than 3.</p>
+<p>Let&rsquo;s code it.</p>
+<p>We will use traits and associated types. Look at this piece:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">trait</span> Compare<span style="color:#f92672">&lt;</span>Rhs<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Output</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>This trait will be implemented for natural numbers.
+Also, we will see multidispatch in action.</p>
+<p>Let&rsquo;s write an implementation for the 1st rule of comparison:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#75715e">// Some zero-sized types for representing equality
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">EQ</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">LT</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">GT</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// we&#39;ve got to impls since we have no &#34;less or equal to&#34; type
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">impl</span> Compare<span style="color:#f92672">&lt;</span>Zero<span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">for</span> Zero {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Output</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">EQ</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">impl</span><span style="color:#f92672">&lt;</span>A<span style="color:#f92672">&gt;</span> Compare<span style="color:#f92672">&lt;</span>Succ<span style="color:#f92672">&lt;</span>A<span style="color:#f92672">&gt;&gt;</span> <span style="color:#66d9ef">for</span> Zero {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Output</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">LT</span>:
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>The meaning of these impls are <code>Comparing Zero with Zero produces EQ</code> and <code>Comparing Zero with Succ(A) produces LT</code>. As you can also see, the type for which the trait is implemented is used as <em>left hand side</em> of comparison, and the type parameter <code>Rhs</code> is the <em>right hand side</em>.</p>
+<p>In order to invoke the implementation, we need to write</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>Zero <span style="color:#66d9ef">as</span> Compare<span style="color:#f92672">&lt;</span>Zero<span style="color:#f92672">&gt;&gt;</span>::Output</span></span></code></pre></div><p>which means &ldquo;get an implementation of trait Compare<Zero> for Zero, and get the associated Output from it&rdquo;.</p>
+<p><img src="/lxhqoutaxdr2c1bb5gl8.png" alt="Inferred type"></p>
+<p>As you can see, the compiler inferred the exact type that we needed. We have just made a computation on type level!</p>
+<p>As you have seen, the <code>&lt;Zero as Compare&lt;Zero&gt;&gt;::Output</code> thing is kind of awkward (imagine if there are even nested invocations), and we can actually simplify it with the type aliases:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Cmp</span><span style="color:#f92672">&lt;</span>Lhs, Rhs<span style="color:#f92672">&gt;</span> <span style="color:#f92672">=</span> <span style="color:#f92672">&lt;</span>Lhs <span style="color:#66d9ef">as</span> Compare<span style="color:#f92672">&lt;</span>Rhs<span style="color:#f92672">&gt;&gt;</span>::Output;</span></span></code></pre></div><p>It makes the code MUCH more readable, and allow us to look at traits as just <strong>functions operating on types</strong>. The generic type parameters (<code>Lhs, Rhs</code>) are function&rsquo;s parameters, associated types are what function returns (<code>Output</code>).</p>
+<p>Notice, that I didn&rsquo;t write the implementation for comparison between <code>Succ&lt;A&gt;</code> and <code>Succ&lt;B&gt;</code>. Let it be your home assignment (you can see the solution in the code repository, the link is down below). A hint: it involves recursion.</p>
+<p>Thank you for reading the article, that&rsquo;s all for today! In the next part of the series, I am going to discuss type-level lists. Please, leave comments below if you like the article and in case you spotted any mistakes or haven&rsquo;t understood something, I am open for critics and discussion!</p>
+<p>The project&rsquo;s source code:</p>
+<blockquote>
+<p><a href="https://github.com/thedenisnikulin/type-level-sort">https://github.com/thedenisnikulin/type-level-sort</a></p>
+</blockquote>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>
