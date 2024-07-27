@@ -4,9 +4,9 @@ date = 2024-07-27T14:34:35+03:00
 draft = true
 +++
 
-<div style="display:flex;">
-  <img src="https://avatars.githubusercontent.com/u/46903210?v=4" alt="avatar" width="200px" style="border-radius: 50%">
-  <h1 style="text-align: left;margin: 1em 0 1em 1em"><code style="font-size: xx-large">rw_panic0_0</code>'s random brain dumps</h1>
+<div style="display:flex;flex-direction:row;flex-wrap:wrap">
+  <img src="https://avatars.githubusercontent.com/u/46903210?v=4" alt="avatar" style="border-radius: 50%;max-width:200px;max-height:200px;margin: 0 2em 0 0">
+  <h1 style="text-align: left;margin: 0.5em 0 0.5em 0;flex-basis:60%"><code style="font-size: xx-large">rw_panic0_0</code>'s random brain dumps</h1>
 </div>
 
 ## [ ☁️Posts ](/posts) --- [🌊Github](https://github.com/thedenisnikulin)
