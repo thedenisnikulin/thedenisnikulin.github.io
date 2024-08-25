@@ -22,6 +22,7 @@ Other blogs that I find inspiring:
 + https://kerkour.com/
 + https://faultlore.com/blah/
 + https://erikarow.land/
++ https://lelouch.dev/
 
 <!-- Another variant of home page: -->
 <!-- <p align="center"> -->
